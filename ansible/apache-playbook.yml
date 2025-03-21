@@ -1,0 +1,23 @@
+- hosts: all
+  become: true
+  tasks:
+    - name: Apache Instalacija
+      yum:
+        name: httpd
+        state: present
+
+    - name: Start Apache
+      service:
+        name: httpd
+        state: started
+        enabled: true
+
+    - name: Kopiranje index.html
+      copy:
+        src: ../index.html  
+        dest: /var/www/html/index.html
+
+    - name: Kopiranje style.css
+      copy:
+        src: ../style.css
+        dest: /var/www/html/style.css
