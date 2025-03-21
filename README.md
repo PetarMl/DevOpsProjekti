@@ -1,16 +1,30 @@
  terraform-apache-project
+
 ├──  terraform
+
 │ ├── main.tf
+
 │ ├── output.tf
+
 │ ├── variables.tf
+
 │ ├── terraform.tfstate 
+
 │
+
+
 ├──  ansible
+
 │ ├── inventory.ini 
+
 │ ├── apache-playbook.yml 
+
 │
+
 ├── index.html 
+
 ├── style.css 
+
 |___ README.md
 
 Tehnologije koriscene u projektu: AWS,Terraform, Ansible i Git(postavljen projekat preko komandi, ne manuleno)
